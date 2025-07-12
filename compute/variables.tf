@@ -13,7 +13,7 @@ variable "compute_engine_sa_name" {
 }
 
 variable "compute_engine_sa_scopes" {
-  type = list(any)
+  type        = list(any)
   description = "List of scopes for the compute engine service account"
   default = [
     "https://www.googleapis.com/auth/devstorage.read_only",
@@ -26,8 +26,8 @@ variable "compute_engine_sa_scopes" {
 }
 
 variable "region" {
-  type    = string
-  default = "asia-east1"
+  type        = string
+  default     = "asia-east1"
   description = "Region where service directory can find the compute engine instances"
 }
 
@@ -43,14 +43,14 @@ variable "vm_instance_image" {
 }
 
 variable "vm_metadata" {
-  type    = map(any)
-  default = null
+  type        = map(any)
+  default     = null
   description = "Map of metadata to pass to the compute engine instance"
 }
 
 variable "disk_auto_delete" {
-  type    = bool
-  default = true
+  type        = bool
+  default     = true
   description = "Whether the disk will be deleted when the VM is deleted"
 }
 
