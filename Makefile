@@ -4,4 +4,4 @@ lint:
 fmt:
 	terraform fmt -recursive -diff .
 
-.PHONY: lint
+.PHONY: lint fmt
