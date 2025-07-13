@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.2.1...v1.3.0) (2025-07-13)
+
+### Features
+
+* new modules router and nat gateway ([#4](https://github.com/guerzon/terraform-modules-gcp/issues/4)) ([edf2f3b](https://github.com/guerzon/terraform-modules-gcp/commit/edf2f3bc3ef8eb85ccd94e8bdadd0388c738488c))
+
 ## [1.2.1](https://github.com/guerzon/terraform-modules-gcp/compare/v1.2.0...v1.2.1) (2025-07-13)
 
 ### Bug Fixes
