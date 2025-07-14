@@ -8,6 +8,7 @@
 - `certificate`: Classic certificate in Certificate Manager.
 - `cloudarmor`: Cloud Armor rules (use-case: Java, NodeJS, PH-based users).
 - `compute`: Compute Engine instances in an unmanaged instance group.
+- `computeinstance`: Compute Engine instances.
 - `database`: Database instance inside a Cloud SQL instance, also used for SQL users.
 - `dnsrecord`: DNS record set inside a managed zone.
 - `dnszone`: Managed zone in Cloud DNS.

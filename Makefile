@@ -5,7 +5,7 @@ fmt:
 	terraform fmt -recursive -diff .
 
 docs:
-	for m in certificate cloudarmor database dnszone kubernetes loadbalancer natgateway router compute dnsrecord firewall network registry sqlinstance; do \
+	for m in certificate cloudarmor database dnszone kubernetes loadbalancer natgateway router compute dnsrecord firewall network registry sqlinstance computeinstance; do \
 	cd $$m && docker run --rm --volume "$$(pwd):/terraform-docs" -u $$(id -u) quay.io/terraform-docs/terraform-docs:0.20.0 markdown /terraform-docs > README.md; \
 	echo "[+] Done generating docs for $$m\n"; \
 	cd ../; \
