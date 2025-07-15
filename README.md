@@ -13,6 +13,7 @@
 - `dnsrecord`: DNS record set inside a managed zone.
 - `dnszone`: Managed zone in Cloud DNS.
 - `firewall`: Specific firewall rules.
+- `ipaddress`: Reserve static IP address.
 - `kubernetes`: Google Kubernetes Engine - Standard.
 - `loadbalancer`: Application load balancer.
 - `natgateway`: NAT gateway for private compute engine instances and GKE clusters.
@@ -20,3 +21,4 @@
 - `registry`: Artifact registry.
 - `router`: Cloud Router instance.
 - `sqlinstance`: Cloud SQL instance.
+- `subnets`: Subnetworks.

@@ -57,7 +57,7 @@ variable "network_name" {
 
 variable "subnetwork" {
   type        = string
-  description = "Name of the subnet wherein the compute engine instance will be created"
+  description = "Subnet wherein the compute engine instance will be created"
 }
 
 variable "region" {

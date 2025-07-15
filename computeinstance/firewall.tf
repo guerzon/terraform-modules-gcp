@@ -20,7 +20,6 @@ resource "google_compute_firewall" "allow_icmp" {
   source_ranges = var.allowed_ip_ranges
   target_tags   = var.tags
   priority      = 65534
-  disabled      = true
 }
 
 resource "google_compute_firewall" "allow_ssh" {
@@ -30,6 +29,19 @@ resource "google_compute_firewall" "allow_ssh" {
   allow {
     protocol = "tcp"
     ports    = ["22"]
+  }
+  source_ranges = var.allowed_ip_ranges
+  target_tags   = var.tags
+  priority      = 65534
+}
+
+resource "google_compute_firewall" "allow_apps" {
+  count   = var.public_instance ? 1 : 0
+  name    = "${var.environment}-allow-apps"
+  network = var.network_name
+  allow {
+    protocol = "tcp"
+    ports    = ["9090"]
   }
   source_ranges = var.allowed_ip_ranges
   target_tags   = var.tags
