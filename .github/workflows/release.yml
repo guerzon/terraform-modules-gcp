@@ -1,0 +1,34 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.tpl'
+      - '**/*.py'
+      - '**/*.tf'
+      - '.github/workflows/release.yml'
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'guerzon'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Release
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          semantic_version: 24.2.7
+          extra_plugins: |
+            @semantic-release/changelog@6.0.3
+            @semantic-release/git@10.0.1
+            conventional-changelog-conventionalcommits@9.1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_ACTIONS }}
