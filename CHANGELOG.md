@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1](https://github.com/guerzon/terraform-modules-gcp/compare/v1.1.0...v1.1.1) (2025-08-09)
+
+### Bug Fixes
+
+* **sqlinstance:** workaround to fix issue on google_service_networking_connection during destroy ([91beedd](https://github.com/guerzon/terraform-modules-gcp/commit/91beedda01e6ae16372783e3b6966a15ce3710f1))
+
 ## [1.1.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.0.0...v1.1.0) (2025-08-09)
 
 ### Features
