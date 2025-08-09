@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.0.0...v1.1.0) (2025-08-09)
+
+### Features
+
+* **kubernetes:** carve out scopes to var ([5ad8410](https://github.com/guerzon/terraform-modules-gcp/commit/5ad84104ff2bdb7f0d0ee352ce6973182a3488f2))
+
 ## 1.0.0 (2025-07-16)
 
 ### Features
