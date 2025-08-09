@@ -12,6 +12,9 @@ resource "google_service_networking_connection" "default" {
   network                 = var.network_name
   service                 = "servicenetworking.googleapis.com"
   reserved_peering_ranges = [google_compute_global_address.default.name]
+  # Issue during destroy
+  # https://github.com/hashicorp/terraform-provider-google/issues/19908
+  deletion_policy = "ABANDON"
 }
 
 resource "google_sql_database_instance" "default" {
