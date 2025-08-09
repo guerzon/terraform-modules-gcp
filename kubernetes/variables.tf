@@ -69,3 +69,11 @@ variable "deletion_protection" {
   description = "Deletion protection"
   default     = true
 }
+
+variable "scopes" {
+  type        = list(string)
+  description = "OAuth scopes for the node pool"
+  default = [
+    "https://www.googleapis.com/auth/cloud-platform"
+  ]
+}

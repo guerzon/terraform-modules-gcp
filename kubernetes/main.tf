@@ -27,10 +27,8 @@ resource "google_container_node_pool" "preemptible" {
     preemptible     = true
     machine_type    = var.node_pool_size
     service_account = google_service_account.default.email
-    oauth_scopes = [
-      "https://www.googleapis.com/auth/cloud-platform"
-    ]
-    disk_size_gb = var.node_disk_size
+    oauth_scopes    = var.scopes
+    disk_size_gb    = var.node_disk_size
   }
   network_config {
     enable_private_nodes = var.enable_private_nodes
