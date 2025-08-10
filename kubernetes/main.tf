@@ -3,6 +3,13 @@ resource "google_service_account" "default" {
   display_name = "Service account for GKE"
 }
 
+resource "google_project_iam_member" "default" {
+  for_each = toset(var.roles)
+  project  = var.project_id
+  role     = each.value
+  member   = "serviceAccount:${google_service_account.default.email}"
+}
+
 resource "google_container_cluster" "default" {
   name        = var.cluster_name
   description = var.cluster_description

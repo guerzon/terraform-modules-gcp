@@ -77,3 +77,14 @@ variable "scopes" {
     "https://www.googleapis.com/auth/cloud-platform"
   ]
 }
+
+variable "project_id" {
+  type        = string
+  description = "Project ID where the GKE cluster will be created"
+}
+
+variable "roles" {
+  type        = list(string)
+  description = "List of IAM roles to assign to the service account"
+  default     = []
+}
