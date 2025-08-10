@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.2.0...v1.3.0) (2025-08-10)
+
+### Features
+
+* **sqlinstance:** output the private IP ([d63e535](https://github.com/guerzon/terraform-modules-gcp/commit/d63e5355a65d7479ab15ae441cf8628dba83f163))
+
 ## [1.2.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.1.1...v1.2.0) (2025-08-10)
 
 ### Features
