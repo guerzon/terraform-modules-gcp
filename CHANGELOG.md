@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.1.1...v1.2.0) (2025-08-10)
+
+### Features
+
+* **kubernetes:** allow binding IAM role to serviceAccount ([27592b9](https://github.com/guerzon/terraform-modules-gcp/commit/27592b913980b53333c17ece1595fef5e3ad6b50))
+
 ## [1.1.1](https://github.com/guerzon/terraform-modules-gcp/compare/v1.1.0...v1.1.1) (2025-08-09)
 
 ### Bug Fixes
