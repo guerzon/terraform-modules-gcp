@@ -7,3 +7,8 @@ output "sql_instance_name" {
   description = "The name of the SQL instance created."
   value       = google_sql_database_instance.default.name
 }
+
+output "internal_ip" {
+  description = "The private IP address of the SQL instance."
+  value       = google_sql_database_instance.default.private_ip_address
+}
