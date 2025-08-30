@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.5.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.4.0...v1.5.0) (2025-08-30)
+
+### Features
+
+* **computeinstance:** ignore attached disk changes ([6e338bc](https://github.com/guerzon/terraform-modules-gcp/commit/6e338bc82ae966ee0ebf6bac1fc14d35d76170a9))
+
 ## [1.4.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.3.1...v1.4.0) (2025-08-30)
 
 ### Features
