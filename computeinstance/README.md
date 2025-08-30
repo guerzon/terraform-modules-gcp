@@ -43,4 +43,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_instance_id"></a> [instance\_id](#output\_instance\_id) | The ID of the compute engine instance. |
 | <a name="output_public_ip"></a> [public\_ip](#output\_public\_ip) | The public IP address attached to the instance. |
