@@ -50,11 +50,6 @@ variable "disk_auto_delete" {
   description = "Whether the disk will be deleted when the VM is deleted"
 }
 
-variable "network_name" {
-  type        = string
-  description = "Self ID of the VPC network"
-}
-
 variable "subnetwork" {
   type        = string
   description = "Subnet wherein the compute engine instance will be created"
@@ -86,11 +81,4 @@ variable "public_instance" {
   type        = bool
   description = "Add a public IP address to the instance."
   default     = false
-}
-
-variable "allowed_ip_ranges" {
-
-  type        = list(string)
-  description = "List of IP addresses allowed to connect to the instance."
-  default     = []
 }
