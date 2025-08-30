@@ -29,4 +29,4 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_subnets"></a> [subnets](#output\_subnets) | The create subnetworks |
+| <a name="output_subnets"></a> [subnets](#output\_subnets) | The created subnetworks |

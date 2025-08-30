@@ -18,6 +18,7 @@ No modules.
 |------|------|
 | [google_container_cluster.default](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster) | resource |
 | [google_container_node_pool.preemptible](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_node_pool) | resource |
+| [google_project_iam_member.default](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member) | resource |
 | [google_service_account.default](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/service_account) | resource |
 
 ## Inputs
@@ -35,6 +36,9 @@ No modules.
 | <a name="input_node_pool_count"></a> [node\_pool\_count](#input\_node\_pool\_count) | Count of node instances | `number` | `1` | no |
 | <a name="input_node_pool_size"></a> [node\_pool\_size](#input\_node\_pool\_size) | Instance size for the node pool instances | `string` | `"e2-standard-2"` | no |
 | <a name="input_node_pool_type"></a> [node\_pool\_type](#input\_node\_pool\_type) | Node pool type, either 'preemptible' or 'permanent'. | `string` | n/a | yes |
+| <a name="input_project_id"></a> [project\_id](#input\_project\_id) | Project ID where the GKE cluster will be created | `string` | n/a | yes |
+| <a name="input_roles"></a> [roles](#input\_roles) | List of IAM roles to assign to the service account | `list(string)` | `[]` | no |
+| <a name="input_scopes"></a> [scopes](#input\_scopes) | OAuth scopes for the node pool | `list(string)` | <pre>[<br/>  "https://www.googleapis.com/auth/cloud-platform"<br/>]</pre> | no |
 | <a name="input_subnet"></a> [subnet](#input\_subnet) | Subnet where this cluster will be located | `string` | `null` | no |
 
 ## Outputs

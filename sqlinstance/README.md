@@ -54,4 +54,5 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_database_conn"></a> [database\_conn](#output\_database\_conn) | The connection name of the Cloud SQL instance. |
+| <a name="output_internal_ip"></a> [internal\_ip](#output\_internal\_ip) | The private IP address of the SQL instance. |
 | <a name="output_sql_instance_name"></a> [sql\_instance\_name](#output\_sql\_instance\_name) | The name of the SQL instance created. |
