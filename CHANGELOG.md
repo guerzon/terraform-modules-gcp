@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.1](https://github.com/guerzon/terraform-modules-gcp/compare/v1.3.0...v1.3.1) (2025-08-30)
+
+### Bug Fixes
+
+* remove firewall resources in computeinstance module ([85ad9d8](https://github.com/guerzon/terraform-modules-gcp/commit/85ad9d80a9c6ccccee820e167aaa62bf8801a1d8))
+
 ## [1.3.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.2.0...v1.3.0) (2025-08-10)
 
 ### Features
