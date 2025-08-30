@@ -30,6 +30,9 @@ resource "google_compute_instance" "default" {
     }
     auto_delete = var.disk_auto_delete
   }
+  lifecycle {
+    ignore_changes = [attached_disk]
+  }
   key_revocation_action_type = "NONE"
   metadata                   = var.vm_metadata
   service_account {
