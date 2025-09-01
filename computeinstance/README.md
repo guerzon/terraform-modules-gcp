@@ -35,6 +35,7 @@ No modules.
 | <a name="input_server_name"></a> [server\_name](#input\_server\_name) | Name of the compute engine instance to be created | `string` | n/a | yes |
 | <a name="input_subnetwork"></a> [subnetwork](#input\_subnetwork) | Subnet wherein the compute engine instance will be created | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | List of tags to be applied to the compute engine instance | `list(string)` | `[]` | no |
+| <a name="input_vm_bootdisk_size"></a> [vm\_bootdisk\_size](#input\_vm\_bootdisk\_size) | Size of the boot disk in GB | `string` | `null` | no |
 | <a name="input_vm_instance_image"></a> [vm\_instance\_image](#input\_vm\_instance\_image) | Image to be used for the compute engine instance | `string` | `"ubuntu-minimal-2204-jammy-v20250521"` | no |
 | <a name="input_vm_metadata"></a> [vm\_metadata](#input\_vm\_metadata) | Map of metadata to pass to the compute engine instance | `map(any)` | `null` | no |
 | <a name="input_zone"></a> [zone](#input\_zone) | Zone where the compute engine instance will be created. | `string` | n/a | yes |

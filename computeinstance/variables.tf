@@ -32,6 +32,12 @@ variable "vm_instance_image" {
   default     = "ubuntu-minimal-2204-jammy-v20250521"
 }
 
+variable "vm_bootdisk_size" {
+  type        = string
+  description = "Size of the boot disk in GB"
+  default     = null
+}
+
 variable "vm_metadata" {
   type        = map(any)
   default     = null

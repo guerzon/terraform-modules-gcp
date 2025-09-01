@@ -27,6 +27,7 @@ resource "google_compute_instance" "default" {
   boot_disk {
     initialize_params {
       image = var.vm_instance_image
+      size  = var.vm_bootdisk_size
     }
     auto_delete = var.disk_auto_delete
   }
