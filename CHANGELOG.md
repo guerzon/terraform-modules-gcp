@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.6.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.5.0...v1.6.0) (2025-09-01)
+
+### Features
+
+* **computeinstance:** allow specifying the boot disk size ([6f4aa69](https://github.com/guerzon/terraform-modules-gcp/commit/6f4aa69f667b70dcd9d50397bd39d1b4bcdf595c))
+
 ## [1.5.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.4.0...v1.5.0) (2025-08-30)
 
 ### Features
