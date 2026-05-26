@@ -5,6 +5,7 @@ resource "google_compute_global_address" "default" {
   address_type  = "INTERNAL"
   prefix_length = 16
   network       = var.network_name
+  project       = var.project_id
 }
 
 resource "google_service_networking_connection" "default" {
