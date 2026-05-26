@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.7.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.6.0...v1.7.0) (2026-05-26)
+
+### Features
+
+* **database:** change from password_wo to password ([#6](https://github.com/guerzon/terraform-modules-gcp/issues/6)) ([e5f9ff0](https://github.com/guerzon/terraform-modules-gcp/commit/e5f9ff01ca8625d2450b53434541b5a13b2abc2e))
+
 ## [1.6.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.5.0...v1.6.0) (2025-09-01)
 
 ### Features
