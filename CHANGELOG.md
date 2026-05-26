@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.8.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.7.0...v1.8.0) (2026-05-26)
+
+### Features
+
+* **sqlinstance:** update project id ([#8](https://github.com/guerzon/terraform-modules-gcp/issues/8)) ([66006d8](https://github.com/guerzon/terraform-modules-gcp/commit/66006d8bb585fe9da5cbc339d2937953b7b01608))
+
+### Bug Fixes
+
+* ci workflow ([29b990a](https://github.com/guerzon/terraform-modules-gcp/commit/29b990a924107d59a97cd6c023f6fea8696521b0))
+* **sqlinstance:** add project id ([#7](https://github.com/guerzon/terraform-modules-gcp/issues/7)) ([3573c21](https://github.com/guerzon/terraform-modules-gcp/commit/3573c21939b49109a39c2af750610eda7d4e6e71))
+
 ## [1.7.0](https://github.com/guerzon/terraform-modules-gcp/compare/v1.6.0...v1.7.0) (2026-05-26)
 
 ### Features
