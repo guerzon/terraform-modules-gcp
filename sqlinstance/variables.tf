@@ -133,3 +133,8 @@ variable "query_string_length" {
   default     = 1024
   description = "Used for query insights, maximum length of the query string stored (in bytes)."
 }
+
+variable "project_id" {
+  type        = string
+  description = "The ID of the project in which the resource belongs"
+}
