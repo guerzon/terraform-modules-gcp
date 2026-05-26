@@ -5,7 +5,7 @@ resource "google_compute_global_address" "default" {
   address_type  = "INTERNAL"
   prefix_length = 16
   network       = var.network_name
-  project       = var.project_id
+  project       = var.project
 }
 
 resource "google_service_networking_connection" "default" {
@@ -13,8 +13,6 @@ resource "google_service_networking_connection" "default" {
   network                 = var.network_name
   service                 = "servicenetworking.googleapis.com"
   reserved_peering_ranges = [google_compute_global_address.default.name]
-  # Issue during destroy
-  # https://github.com/hashicorp/terraform-provider-google/issues/19908
   deletion_policy = "ABANDON"
 }
 
